@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat with Socket.IO</title>
+    <meta charset="utf-8"/>
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/chat.css">
+  </head>
+  <body>
+
+    <div id="content">
+      <div id="log"><form action="/logout" method="get" id="logout">Logout</form></div>
+      <div class="clearfix"></div>
+      <form id="chat_form">
+        <textarea id="msg" placeholder="Your message here"></textarea>
+        <input type="button" id="send" value="Send"/>
+      </form>
+    </div>
+    <p>&nbsp;</p>
+    <div id="chat_content"></div>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <img src="../images/left-image.png" id="image"alt="...">
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Chatting Room</h5><br>
+          <form id='loginForm'>
+            <p id="welcome">Welcome</p>
+            <label class="labels">User Id</label><br>
+            <input id='userID' type='userID' required="required" placeholder="user ID"/><br><br>
+            <label class="labels">Password</label><br>
+            <input id='password' type='password' required="required" placeholder="Password"/><br><br>
+            <button type="button" value="Login" id="submit" class="btn btn-success">Login</button>
+            <!-- <input type="button" value="Login" id="submit"/><br> -->
+            <p><span id="serverMsg"></span></p>
+            <p><a id="forgotP">Forgot Login</a>?</p>
+            <p id="errorMsg">ID = 'user', password = 'password'</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="card" id="team">
+    <div class="card-header">
+      Team 18
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Dujin Kim (A01165553)</li>
+      <li class="list-group-item">Fadi Basheer (A01074701)</li>
+      <li class="list-group-item">Sarah Makkar (A01254577)</li>
+      <li class="list-group-item">Sazia Makkar (A01254578)</li>
+    </ul>
+  </div>
+</body>
+
+<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/login.js"></script>
+</html>

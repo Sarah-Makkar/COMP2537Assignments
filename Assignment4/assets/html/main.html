@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatting</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div id="content">
+    <div id="log"><form  method="get" id="logout">Logout</form></div>
+    <div class="clearfix"></div>
+
+    <h4>Welcome. You can join the chat!</h4>
+    <form id="chat_form">
+      <input type="button" id="join" value="Join"/>
+    </form>
+  </div>
+  <p>&nbsp;</p>
+
+  <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

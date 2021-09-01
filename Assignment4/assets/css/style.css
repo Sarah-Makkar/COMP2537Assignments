@@ -1,0 +1,42 @@
+
+      body {
+        padding: 1rem;
+      }
+
+      #image {
+        width: 80%;
+        height: 600px
+      }
+
+      .card-title {
+        font-size: 2rem;
+      }
+
+      #welcome {
+        font-size: 1.5rem;
+      }
+
+      .labels {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+
+      #forgotP {
+        font-size: 1.2rem;
+        color: red;
+        font-weight: bold;
+      }
+
+      #team {
+        width: 20rem;
+        margin: auto;
+        font-size: 1.3rem;
+      }
+
+      .card-header {
+        font-weight: bold;
+      }
+
+      #forgotp{
+        color:darkblue;
+      }
